@@ -7,18 +7,20 @@
 
     <title>Install Plugin - Noroff</title>
 
-    <!-- include jQuery library first -->
-    <!-- then include plugin -->
-    <!-- include the stylesheet, this can be added anywhere in the head -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/timedropper/timedropper.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/timedropper/timedropper.min.css">
 
-    <link rel="stylesheet" href="./css/master.css" text="text/css" />
+    <link rel="stylesheet" type="text/css" href="./css/master.css" />
+    <script src="./js/master.js"></script>
 </head>
 <body>
 
-    <!-- Add a text input to the page -->
+<input type="text" id="alarm" />
 
-    <!-- Call the timeDropper plugin on the alarm element, 
-        either using inline script or external file below -->
-    <script src="./js/master.js"></script>
+
+<script defer>
+    $( "#alarm" ).timeDropper();
+</script>
 </body>
 </html>
